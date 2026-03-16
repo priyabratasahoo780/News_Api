@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>⚡ NeonNews Pro</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="nav">
+
+<div class="nav-left">
+  <button id="hamburger" class="hamburger-btn">
+    <i class="fas fa-bars"></i>
+  </button>
+  <div class="logo">⚡ NeonNews</div>
+</div>
+
+<div class="controls">
+
+<input id="searchInput" placeholder="Search news...">
+
+<button id="searchBtn">Search</button>
+
+<button id="voiceBtn">🎤</button>
+
+<button id="themeToggle">🌙</button>
+
+</div>
+
+</nav>
+
+
+<!-- TRENDING TICKER -->
+
+<div class="ticker">
+
+<div class="ticker-label">Trending</div>
+
+<div class="ticker-wrapper">
+<div id="tickerContent"></div>
+</div>
+
+</div>
+
+
+<!-- MAIN LAYOUT -->
+
+<div class="container">
+
+<aside class="sidebar">
+
+<ul>
+
+<li class="active"><i class="fas fa-globe"></i> General</li>
+<li><i class="fas fa-microchip"></i> Technology</li>
+<li><i class="fas fa-football-ball"></i> Sports</li>
+<li><i class="fas fa-chart-line"></i> Business</li>
+<li><i class="fas fa-flask"></i> Science</li>
+<li><i class="fas fa-heartbeat"></i> Health</li>
+<li><i class="fas fa-film"></i> Entertainment</li>
+
+</ul>
+
+</aside>
+
+
+<section class="news-section">
+
+<div class="news-grid" id="newsGrid"></div>
+
+<div id="loader" class="loader"></div>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
